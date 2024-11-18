@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "Basculetest_behav" "xil_defaultlib.Basculetest" -log "elaborate.log" 

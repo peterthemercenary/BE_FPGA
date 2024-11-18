@@ -1,0 +1,4 @@
+Running: xsim.dir/Basculetest_behav/xsimk -simmode gui -wdb Basculetest_behav.wdb -simrunnum 0 -socket 58107
+Design successfully loaded
+Design Loading Memory Usage: 23460 KB (Peak: 24136 KB)
+Design Loading CPU Usage: 10 ms
