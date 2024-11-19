@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730816079" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ALUtest.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="Basculebest_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="Basculebest.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="Basculebest_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="Basculebest_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="Basculebest_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="Basculebest.vds"/>
-  <File Type="REPORTS-TCL" Name="Basculebest_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="Basculebest_timing_summary_synth.pb"/>
-  <File Type="PA-TCL" Name="Basculebest.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1731978906" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ALUtest.dcp">
+  <File Type="PA-TCL" Name="CPU1best.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="CPU1best_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="CPU1best_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CPU1best.vds"/>
+  <File Type="RDS-UTIL" Name="CPU1best_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CPU1best_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CPU1best.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CPU1best_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CPU1best_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Basculebest.vhd">
@@ -17,14 +17,37 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/LCbest.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Benchbest.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/Compteurbest.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Instructionmemorybest.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LC_OP_RE.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPU1best.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LCbest.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -45,13 +68,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Benchbest.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/Datamemorybest.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -59,7 +75,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Instructionmemorybest.vhd">
+    <File Path="$PSRCDIR/sources_1/new/LD_OP_Mem.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LC_OP_DI.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -68,7 +91,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Basculebest"/>
+      <Option Name="TopModule" Val="CPU1best"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

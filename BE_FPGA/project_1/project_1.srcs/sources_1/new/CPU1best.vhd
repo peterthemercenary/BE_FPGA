@@ -88,7 +88,7 @@ component LC_OP_RE is
 end component ;
 
     signal IP_memInstru         : STD_LOGIC_VECTOR(7 downto 0);
-    signal memInstru_LiDi       : STD_LOGIC_VECTOR(7 downto 0);
+    signal memInstru_LiDi       : STD_LOGIC_VECTOR(31 downto 0);
     signal LiDi_A               : STD_LOGIC_VECTOR(7 downto 0);
     signal LiDi_B               : STD_LOGIC_VECTOR(7 downto 0);
     signal LiDi_C               : STD_LOGIC_VECTOR(7 downto 0);
