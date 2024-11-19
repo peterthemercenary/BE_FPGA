@@ -106,9 +106,9 @@ begin
     U2 : Instructionmemorybest Port map(  CLK        => CLK,
                                           addr_I     => IP_memInstru  , 
                                           DATA_OUTI  => memInstru_LiDi);
-    U3 : Basculebest Port map(   ai    => memInstru_LiDi(31 downto 23),
-                                 bi    => memInstru_LiDi(23 downto 15),
-                                 opi   => memInstru_LiDi(15 downto 7),
+    U3 : Basculebest Port map(   ai    => memInstru_LiDi(31 downto 24),
+                                 bi    => memInstru_LiDi(23 downto 16),
+                                 opi   => memInstru_LiDi(15 downto 8),
                                  ci    => memInstru_LiDi(7 downto 0),
                                  CLK   => CLK,
                                  ao    => LiDi_A,
