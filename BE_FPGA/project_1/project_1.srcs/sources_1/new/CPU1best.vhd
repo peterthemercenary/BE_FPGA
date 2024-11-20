@@ -123,12 +123,13 @@ begin
     U4 : Benchbest Port map (   ADDR_A  => (others => 'X'),
                                 ADDR_B  => (others => 'X'),
                                 addr_W => addr_W_signal,
-                                W       => LiDi_OP(0),                  -- ATENTION !
+                                W       => LC_OP,                  -- ATENTION !
                                 DATA    => LiDi_B,
                                 RST     => RST,
                                 CLK     => CLK,
                                 QA      => None_signal,
                                 QB      => None_signal);
+                                
     U5: LC_OP_RE Port map (     op=>LiDi_OP,
                                 W=>LC_OP);
                                  
