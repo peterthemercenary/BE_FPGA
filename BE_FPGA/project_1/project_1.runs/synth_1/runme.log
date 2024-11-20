@@ -14,32 +14,7 @@ Commande ECHO d‚sactiv‚e.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source CPU1best.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 448.504 ; gain = 158.844
-Command: read_checkpoint -auto_incremental -incremental C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/utils_1/imports/synth_1/ALUtest.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/utils_1/imports/synth_1/ALUtest.dcp for incremental synthesis
-INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top CPU1best -part xc7a35tcpg236-1
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-
-*** Running vivado
-    with args -log CPU1best.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU1best.tcl
-
-
-Commande ECHO d‚sactiv‚e.
-Commande ECHO d‚sactiv‚e.
-
-****** Vivado v2023.1 (64-bit)
-  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source CPU1best.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 447.305 ; gain = 162.422
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 448.246 ; gain = 163.824
 Command: read_checkpoint -auto_incremental -incremental C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/utils_1/imports/synth_1/ALUtest.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/utils_1/imports/synth_1/ALUtest.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -50,31 +25,246 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12692
+INFO: [Synth 8-7075] Helper process launched with PID 31340
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1264.391 ; gain = 410.559
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1264.984 ; gain = 410.262
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'CPU1best' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:44]
-INFO: [Synth 8-3491] module 'Compteurbest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Compteurbest.vhd:37' bound to instance 'U1' of component 'Compteurbest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:102]
+INFO: [Synth 8-3491] module 'Compteurbest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Compteurbest.vhd:37' bound to instance 'U1' of component 'Compteurbest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:106]
 INFO: [Synth 8-638] synthesizing module 'Compteurbest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Compteurbest.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'Compteurbest' (0#1) [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Compteurbest.vhd:45]
-INFO: [Synth 8-3491] module 'Instructionmemorybest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Instructionmemorybest.vhd:30' bound to instance 'U2' of component 'Instructionmemorybest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:106]
+INFO: [Synth 8-3491] module 'Instructionmemorybest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Instructionmemorybest.vhd:30' bound to instance 'U2' of component 'Instructionmemorybest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:110]
 INFO: [Synth 8-638] synthesizing module 'Instructionmemorybest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Instructionmemorybest.vhd:38]
 INFO: [Synth 8-256] done synthesizing module 'Instructionmemorybest' (0#1) [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Instructionmemorybest.vhd:38]
-INFO: [Synth 8-3491] module 'Basculebest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Basculebest.vhd:34' bound to instance 'U3' of component 'Basculebest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:109]
+INFO: [Synth 8-3491] module 'Basculebest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Basculebest.vhd:34' bound to instance 'U3' of component 'Basculebest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:113]
 INFO: [Synth 8-638] synthesizing module 'Basculebest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Basculebest.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'Basculebest' (0#1) [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Basculebest.vhd:49]
-INFO: [Synth 8-3491] module 'Benchbest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Benchbest.vhd:36' bound to instance 'U4' of component 'Benchbest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:119]
+INFO: [Synth 8-3491] module 'Benchbest' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Benchbest.vhd:36' bound to instance 'U4' of component 'Benchbest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:123]
 INFO: [Synth 8-638] synthesizing module 'Benchbest' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Benchbest.vhd:48]
 INFO: [Synth 8-256] done synthesizing module 'Benchbest' (0#1) [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Benchbest.vhd:48]
-ERROR: [Synth 8-549] port width mismatch for port 'addr_W': port width = 4, actual width = 8 [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:121]
-ERROR: [Synth 8-285] failed synthesizing module 'CPU1best' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:44]
+INFO: [Synth 8-3491] module 'LC_OP_RE' declared at 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/LC_OP_RE.vhd:35' bound to instance 'U5' of component 'LC_OP_RE' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'LC_OP_RE' [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/LC_OP_RE.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LC_OP_RE' (0#1) [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/LC_OP_RE.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'CPU1best' (0#1) [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:44]
+WARNING: [Synth 8-3848] Net Output in module/entity CPU1best does not have driver. [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:40]
+WARNING: [Synth 8-3848] Net addr_w_signal in module/entity CPU1best does not have driver. [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/CPU1best.vhd:101]
+WARNING: [Synth 8-7129] Port Output[7] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[6] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[5] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[4] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[3] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[2] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[1] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[0] in module CPU1best is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1354.645 ; gain = 500.812
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1360.824 ; gain = 506.102
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1360.824 ; gain = 506.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1360.824 ; gain = 506.102
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1360.824 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/constrs_1/new/Master.xdc]
+Finished Parsing XDC File [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/constrs_1/new/Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1398.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1398.016 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/utils_1/imports/synth_1/ALUtest.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 21    
++---Muxes : 
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	 256 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'U3/opo_reg' and it is trimmed from '8' to '1' bits. [C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.srcs/sources_1/new/Basculebest.vhd:58]
+WARNING: [Synth 8-7129] Port Output[7] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[6] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[5] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[4] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[3] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[2] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[1] in module CPU1best is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Output[0] in module CPU1best is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |     8|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1398.016 ; gain = 506.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1398.016 ; gain = 543.293
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1398.016 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1399.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 85d76f1b
 INFO: [Common 17-83] Releasing license: Synthesis
-21 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 16:57:00 2024...
+32 Infos, 20 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1399.516 ; gain = 927.395
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.runs/synth_1/CPU1best.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU1best_utilization_synth.rpt -pb CPU1best_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 00:04:06 2024...

@@ -96,9 +96,13 @@ end component ;
     signal LC_OP                : STD_LOGIC;
     signal RegistreBank_Out     : STD_LOGIC_VECTOR(7 downto 0);
     signal None_signal          : STD_LOGIC_VECTOR(7 downto 0) := (others => 'X');
+    type reg_array is array(15 downto 0) of STD_LOGIC_VECTOR (7 downto 0); --définition d'un tableau de 16 régistres de 8 bits chacun
+    signal registers : reg_array:= (others=>(others=>'0'));
+    signal addr_w_signal        : STD_LOGIC_VECTOR(3 downto 0);
+
     
 begin
-
+    registers(conv_integer(unsigned(addr_W_signal)))<=LiDi_A ;
     U1 : Compteurbest Port map(   CLK     => CLK,
                                   RST     => RST, 
                                   Dout    => IP_memInstru);
@@ -118,7 +122,7 @@ begin
                                  
     U4 : Benchbest Port map (   ADDR_A  => (others => 'X'),
                                 ADDR_B  => (others => 'X'),
-                                ADDR_W  => LiDi_A,
+                                addr_W => addr_W_signal,
                                 W       => LiDi_OP(0),                  -- ATENTION !
                                 DATA    => LiDi_B,
                                 RST     => RST,
