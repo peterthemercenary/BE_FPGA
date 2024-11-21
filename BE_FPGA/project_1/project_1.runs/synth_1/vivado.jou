@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
 # Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Nov 21 00:10:04 2024
-# Process ID: 19536
-# Current directory: C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.runs/synth_1
-# Command line: vivado.exe -log CPU1best.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU1best.tcl
-# Log file: C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.runs/synth_1/CPU1best.vds
-# Journal file: C:/Users/logar/Documents/GitHub/BE_FPGA/BE_FPGA/project_1/project_1.runs/synth_1\vivado.jou
-# Running On: Pierre, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17041 MB
+# Start of session at: Tue Nov  5 15:14:40 2024
+# Process ID: 33269
+# Current directory: /home/senghor/Bureau/4AE-SE/BE_FPGA/project_1/project_1.runs/synth_1
+# Command line: vivado -log Basculebest.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basculebest.tcl
+# Log file: /home/senghor/Bureau/4AE-SE/BE_FPGA/project_1/project_1.runs/synth_1/Basculebest.vds
+# Journal file: /home/senghor/Bureau/4AE-SE/BE_FPGA/project_1/project_1.runs/synth_1/vivado.jou
+# Running On: insa-20931, OS: Linux, CPU Frequency: 3695.876 MHz, CPU Physical cores: 6, Host memory: 16443 MB
 #-----------------------------------------------------------
-source CPU1best.tcl -notrace
+source Basculebest.tcl -notrace

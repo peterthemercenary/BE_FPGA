@@ -88,7 +88,7 @@ component LC_OP_RE is
 end component ;
 
     signal IP_memInstru         : STD_LOGIC_VECTOR(7 downto 0);
-    signal memInstru_LiDi       : STD_LOGIC_VECTOR(31 downto 0);
+    signal memInstru_LiDi       : STD_LOGIC_VECTOR(7 downto 0);
     signal LiDi_A               : STD_LOGIC_VECTOR(7 downto 0);
     signal LiDi_B               : STD_LOGIC_VECTOR(7 downto 0);
     signal LiDi_C               : STD_LOGIC_VECTOR(7 downto 0);
@@ -96,13 +96,9 @@ end component ;
     signal LC_OP                : STD_LOGIC;
     signal RegistreBank_Out     : STD_LOGIC_VECTOR(7 downto 0);
     signal None_signal          : STD_LOGIC_VECTOR(7 downto 0) := (others => 'X');
-    type reg_array is array(15 downto 0) of STD_LOGIC_VECTOR (7 downto 0); --définition d'un tableau de 16 régistres de 8 bits chacun
-    signal registers : reg_array:= (others=>(others=>'0'));
-    signal addr_w_signal        : STD_LOGIC_VECTOR(3 downto 0);
-
     
 begin
-    registers(conv_integer(unsigned(addr_W_signal)))<=LiDi_A ;
+
     U1 : Compteurbest Port map(   CLK     => CLK,
                                   RST     => RST, 
                                   Dout    => IP_memInstru);
@@ -110,9 +106,9 @@ begin
     U2 : Instructionmemorybest Port map(  CLK        => CLK,
                                           addr_I     => IP_memInstru  , 
                                           DATA_OUTI  => memInstru_LiDi);
-    U3 : Basculebest Port map(   ai    => memInstru_LiDi(31 downto 24),
-                                 bi    => memInstru_LiDi(23 downto 16),
-                                 opi   => memInstru_LiDi(15 downto 8),
+    U3 : Basculebest Port map(   ai    => memInstru_LiDi(31 downto 23),
+                                 bi    => memInstru_LiDi(23 downto 15),
+                                 opi   => memInstru_LiDi(15 downto 7),
                                  ci    => memInstru_LiDi(7 downto 0),
                                  CLK   => CLK,
                                  ao    => LiDi_A,
@@ -122,14 +118,13 @@ begin
                                  
     U4 : Benchbest Port map (   ADDR_A  => (others => 'X'),
                                 ADDR_B  => (others => 'X'),
-                                addr_W => addr_W_signal,
-                                W       => LC_OP,                  -- ATENTION !
+                                ADDR_W  => LiDi_A,
+                                W       => LiDi_OP(0),                  -- ATENTION !
                                 DATA    => LiDi_B,
                                 RST     => RST,
                                 CLK     => CLK,
                                 QA      => None_signal,
                                 QB      => None_signal);
-                                
     U5: LC_OP_RE Port map (     op=>LiDi_OP,
                                 W=>LC_OP);
                                  

@@ -5,13 +5,17 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH variable below, before executing this script"
+exit
+
 var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "C:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2023.1/bin;";
+  PathVal = "/usr/local/insa/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64;/usr/local/insa/Xilinx/Vivado/2023.1/bin;";
 } else {
-  PathVal = "C:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2023.1/bin;" + PathVal;
+  PathVal = "/usr/local/insa/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64;/usr/local/insa/Xilinx/Vivado/2023.1/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -24,7 +28,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log CPU1best.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU1best.tcl" );
+         "-log Basculebest.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basculebest.tcl" );
 
 
 
